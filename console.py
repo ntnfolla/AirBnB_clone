@@ -186,6 +186,7 @@ class HBNBCommand(cmd.Cmd):
             except NameError:
                 print("** value missing **")
                 return False
+
         if len(argl) == 4:
             obj = objdict["{}.{}".format(argl[0], argl[1])]
             if argl[2] in obj.__class__.__dict__.keys():
